@@ -1,16 +1,28 @@
 import { Button } from "../ui/button";
 import { FaBookOpen, FaStar } from "react-icons/fa";
 import { AnimatedTooltipPreview } from "./tooltip";
-
+import { FeatureSection } from "./FeatureSection";
+import { BsStars } from "react-icons/bs";
+import LogoCloud from "../logo-cloud";
 
 export function HeroText(){
     return(
-        <div className="flex flex-col h-full wi-full justify-center items-center gap-8">
+        <div className="flex flex-col h-screen w-full justify-end items-center gap-8">
             <div className="flex flex-col text-5xl justify-center items-center font-bold">
                 <div className="flex">
-                    <h1>
-                        <span className="text-sidebar-foreground"> Verto Quiz App! </span> Clear any
-                    </h1>
+                    <div className="flex gap-2">
+                        <h1>
+                            <span className="text-sidebar-foreground"> Verto Quiz App </span>
+                        </h1>
+                        <h1>
+                            <BsStars className="text-sidebar-foreground"/>
+                        </h1>
+                    </div>
+                    <div>
+                        <h1>
+                            <span> Clear any </span> 
+                        </h1>
+                    </div>
                 </div>
                 <h1>
                     test by practicing here
@@ -22,7 +34,7 @@ export function HeroText(){
             </div>
             
             <div className="flex justify-center items-center text-center text-gray-600">
-                <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:bg-blue-700">Get Started Today! <span><FaBookOpen className=""/></span></Button>
+                <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:bg-blue-700 hover:cursor-pointer">Get Started Today! <span><FaBookOpen className=""/></span></Button>
             </div>
             
             <div className="flex justify-center items-center text-center mt-4 gap-6">
@@ -32,8 +44,16 @@ export function HeroText(){
                 <div className="flex gap-2 justify-center items-center"> 
                     <FaStar className="text-xl text-yellow-400"/> <b>4.8/5</b> <p className="text-gray-500">Ratings over 500 Reviews</p>
                 </div>
-                
             </div>
+
+            <div className="flex gap-2 justify-center items-center"> 
+                <FeatureSection/>
+            </div>
+            
+            <div>
+                <LogoCloud />
+            </div>
+
         </div>
     )
 }
