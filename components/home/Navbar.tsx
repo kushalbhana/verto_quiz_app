@@ -40,7 +40,7 @@ export function NavbarHome() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <NavbarButton className="bg-sidebar-foreground text-white">Book a call</NavbarButton>
           </div>
         </NavBody>
 
@@ -79,7 +79,7 @@ export function NavbarHome() {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                className="w-full "
               >
                 Book a call
               </NavbarButton>

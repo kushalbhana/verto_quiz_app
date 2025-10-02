@@ -54,7 +54,7 @@ npm run prisma:migrate
 
 5. Seed the database:
 ```bash
-npx tsx prisma db seed
+ npx tsx prisma db seed        
 ```
 
 6. Start the development server:
