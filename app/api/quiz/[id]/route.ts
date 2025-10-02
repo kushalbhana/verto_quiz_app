@@ -4,13 +4,15 @@ import { QuizService } from '@/lib/services/QuizService';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
+    
     const repository = new QuizRepository();
     const service = new QuizService(repository);
 
-    const quiz = await service.getQuiz(params.id);
+    const quiz = await service.getQuiz(id);
 
     if (!quiz) {
       return NextResponse.json(

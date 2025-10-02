@@ -56,7 +56,9 @@ async function main() {
     },
   });
 
-  console.log('Seed data created:', quiz);
+  console.log('✅ Seed data created!');
+  console.log('📋 Quiz ID:', quiz.id);  // <-- Add this line
+  console.log('🔗 Use this URL: http://localhost:3000/quiz/' + quiz.id);
 }
 
 main()
