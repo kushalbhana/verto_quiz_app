@@ -34,7 +34,7 @@ export function HeroText(){
             </div>
             
             <div className="flex justify-center items-center text-center text-gray-600">
-                <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:bg-blue-700 hover:cursor-pointer">Get Started Today! <span><FaBookOpen className=""/></span></Button>
+                <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:-translate-y-1 hover:cursor-pointer">Get Started Today! <span><FaBookOpen className=""/></span></Button>
             </div>
             
             <div className="flex justify-center items-center text-center mt-4 gap-6">

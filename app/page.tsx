@@ -18,7 +18,7 @@ export default function HomePage() {
   const fetchQuiz = async () => {
     try {
       // Replace with actual quiz ID from your database
-      const response = await fetch('/api/quiz/cmg897ujj00000pm107uls2hu');
+      const response = await fetch('/api/quiz/cmgb54hee00000pc7izgylh9o');
       const data = await response.json();
       console.log(data)
       setQuiz(data);

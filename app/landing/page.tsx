@@ -1,6 +1,7 @@
 import { HeroBackground } from "@/components/home/HeroBackground";
-import { ListTest } from "@/components/home/ListTest";
+import { QuizSection } from "@/components/home/QuizSection";
 import { NavbarHome } from "@/components/home/Navbar";
+import { Footer } from "@/components/home/footer";
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
       </div>
       
       <div>
-        <ListTest/>
+        <QuizSection/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )

@@ -89,7 +89,6 @@ export function NavbarHome() {
         </MobileNav>
       </Navbar>
       <div className="overflow-hidden">
-
         <DummyContent />
       </div>
       {/* Navbar */}
