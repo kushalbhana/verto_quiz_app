@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { HeroBackground } from "./HeroBackground";
+import { HeroOverlay } from "./HeroOverlay";
 
 export function NavbarHome() {
   const navItems = [
@@ -99,6 +100,7 @@ export function NavbarHome() {
 const DummyContent = () => {
   return (
     <div className="container">
+      <HeroOverlay/>
       <HeroBackground/>
     </div>
   );
