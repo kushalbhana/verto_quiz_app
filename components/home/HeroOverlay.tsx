@@ -4,10 +4,7 @@ import { ExpertiseChart } from "../common/Expertise-chart";
 export function HeroOverlay() {
   return (
     <div 
-      style={{
-            animation: 'floating 8s ease-in-out infinite',
-          }}
-    className="absolute inset-0 w-full h-full grid grid-cols-3 z-20 pointer-events-none">
+      className="absolute inset-0 w-full h-full lg:grid grid-cols-3 z-20 pointer-events-none hidden">
       {/* Column 1 */}
       <div className="flex flex-col justify-center items-center space-y-4">
         <div 

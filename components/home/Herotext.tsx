@@ -8,7 +8,7 @@ import LogoCloud from "../logo-cloud";
 export function HeroText(){
     return(
         <div className="flex flex-col h-screen w-full justify-end items-center gap-8">
-            <div className="flex flex-col text-5xl justify-center items-center font-bold">
+            <div className="flex flex-col text-2xl lg:text-5xl justify-center items-center font-bold">
                 <div className="flex">
                     <div className="flex gap-2">
                         <h1>
@@ -37,7 +37,7 @@ export function HeroText(){
                 <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:-translate-y-1 hover:cursor-pointer">Get Started Today! <span><FaBookOpen className=""/></span></Button>
             </div>
             
-            <div className="flex justify-center items-center text-center mt-4 gap-6">
+            <div className="block lg:flex justify-center items-center text-center mt-4 gap-6">
                 <div>
                     <AnimatedTooltipPreview/>
                 </div>
