@@ -40,7 +40,7 @@ export function NavbarHome() {
   return (
       <Navbar>
         {/* Desktop Navigation */}
-        <NavBody>
+        <NavBody >
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">

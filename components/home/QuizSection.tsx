@@ -2,7 +2,7 @@ import { FaMagic } from "react-icons/fa"
 import ListQuiz from "./ListQuiz"
 export function QuizSection(){
     return(
-        <div className="w-full h-full flex flex-col items-center gap-4 mt-6">
+        <div className="w-full h-full flex flex-col items-center gap-4 mt-20">
             <div className=" h-10 w-44 bg-white rounded-3xl shadow-2xl shadow-gray-500 flex gap-2 p-1 items-center pl-4">
                 <div className="bg-sidebar-foreground/20 h-6 w-8 rounded-full flex justify-center items-center -ml-2">
                     <FaMagic className="text-sidebar-foreground p-1 text-xl rounded-md" />

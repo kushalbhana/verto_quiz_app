@@ -15,8 +15,8 @@ export function HeroText(){
     };
 
     return(
-        <div className="flex flex-col h-screen w-full justify-end items-center gap-8">
-            <div className="flex flex-col text-2xl lg:text-5xl justify-center items-center font-bold">
+        <div className="flex flex-col h-screen w-full justify-end items-center gap-8 mt-10">
+            <div className="flex flex-col text-2xl lg:text-4xl justify-center items-center font-bold">
                 <div className="flex">
                     <div className="flex gap-2">
                         <h1>
