@@ -11,8 +11,6 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import { HeroBackground } from "./HeroBackground";
-import { HeroOverlay } from "./HeroOverlay";
 
 export function NavbarHome() {
   const navItems = [
@@ -32,8 +30,14 @@ export function NavbarHome() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth", // smooth scrolling
+    });
+  };
+  
   return (
-    <div className="relative w-full -mt-14">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -41,7 +45,7 @@ export function NavbarHome() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton className="bg-sidebar-foreground text-white">Start a Quiz</NavbarButton>
+            <NavbarButton onClick={scrollToBottom} className="bg-sidebar-foreground text-white">Start a Quiz</NavbarButton>
           </div>
         </NavBody>
 
@@ -88,19 +92,6 @@ export function NavbarHome() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      <div className="overflow-hidden">
-        <DummyContent />
-      </div>
-      {/* Navbar */}
-    </div>
   );
 }
 
-const DummyContent = () => {
-  return (
-    <div className="container">
-      <HeroOverlay/>
-      <HeroBackground/>
-    </div>
-  );
-};

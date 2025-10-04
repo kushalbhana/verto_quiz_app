@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "../ui/button";
 import { FaBookOpen, FaStar } from "react-icons/fa";
 import { AnimatedTooltipPreview } from "./tooltip";
@@ -6,6 +7,13 @@ import { BsStars } from "react-icons/bs";
 import LogoCloud from "../logo-cloud";
 
 export function HeroText(){
+    const scrollToBottom = () => {
+        window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth", // smooth scrolling
+        });
+    };
+
     return(
         <div className="flex flex-col h-screen w-full justify-end items-center gap-8">
             <div className="flex flex-col text-2xl lg:text-5xl justify-center items-center font-bold">
@@ -34,7 +42,13 @@ export function HeroText(){
             </div>
             
             <div className="flex justify-center items-center text-center text-gray-600">
-                <Button className="h-12 rounded-4xl bg-sidebar-foreground hover:-translate-y-1 hover:cursor-pointer">Get Started Today! <span><FaBookOpen className=""/></span></Button>
+                <Button 
+                    className="h-12 rounded-4xl bg-sidebar-foreground hover:-translate-y-1 hover:cursor-pointer"
+                    onClick={scrollToBottom}
+                    >
+                        Get Started Today! 
+                        <span><FaBookOpen className=""/></span>
+                </Button>
             </div>
             
             <div className="block lg:flex justify-center items-center text-center mt-4 gap-6">

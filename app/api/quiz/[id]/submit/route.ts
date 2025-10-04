@@ -3,8 +3,7 @@ import { QuizRepository } from '@/lib/db/repositories/QuizRepository';
 import { QuizService } from '@/lib/services/QuizService';
 
 export async function POST(
-  request: NextRequest,
-  { params }: { params: { id: string } }
+  request: NextRequest
 ) {
   try {
     const body = await request.json();

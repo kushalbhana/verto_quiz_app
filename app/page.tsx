@@ -1,20 +1,27 @@
-import { QuizSection } from "@/components/home/QuizSection";
 import { NavbarHome } from "@/components/home/Navbar";
+import { QuizSection } from "@/components/home/QuizSection";
 import { Footer } from "@/components/home/footer";
+import { HeroBackground } from "@/components/home/HeroBackground";
+import { HeroOverlay } from "@/components/home/HeroOverlay";
 
 export default function Home() {
+
+
+
   return (
     <div>
-      <div>
-        <NavbarHome/>
+        <NavbarHome />
+      <div className="container">
+        <HeroOverlay/>
+        <HeroBackground/>
       </div>
-      
-      <div>
-        <QuizSection/>
-      </div>
-      <div>
-        <Footer/>
-      </div>
+      <section>
+        <div>
+          <QuizSection />
+        </div>
+      </section>
+
+      <Footer />
     </div>
-  )
+  );
 }

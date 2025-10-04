@@ -1,10 +1,12 @@
+"use client"
+
 import { ReviewCard, ReviewCard2, ReviewCard3 } from "./ReviewCard";
 import { ExpertiseChart } from "../common/Expertise-chart";
 
 export function HeroOverlay() {
   return (
     <div 
-      className="absolute inset-0 w-full h-full lg:grid grid-cols-3 z-20 pointer-events-none hidden">
+      className="absolute inset-0 w-full h-full lg:grid grid-cols-3 z-20 pointer-events-none hidden -mt-14">
       {/* Column 1 */}
       <div className="flex flex-col justify-center items-center space-y-4">
         <div 
