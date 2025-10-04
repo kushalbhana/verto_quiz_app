@@ -8,9 +8,9 @@ export async function POST(
 ) {
   try {
     const body = await request.json();
-    const { answers } = body;
+    const { answers, quizId } = body;
 
-    if (!answers || typeof answers !== 'object') {
+    if (!answers || typeof answers !== 'object' || !quizId || typeof quizId !== 'string') {
       return NextResponse.json(
         { error: 'Invalid answers format' },
         { status: 400 }
@@ -20,7 +20,7 @@ export async function POST(
     const repository = new QuizRepository();
     const service = new QuizService(repository);
 
-    const result = await service.submitQuiz(params.id, answers);
+    const result = await service.submitQuiz(quizId, answers);
 
     return NextResponse.json(result);
   } catch (error) {

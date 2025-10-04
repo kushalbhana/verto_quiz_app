@@ -63,7 +63,7 @@ function QuizPageContent({ quizId }: { quizId: string }) {
       const response = await fetch(`/api/quiz/${quizId}/submit`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ answers: answersObject }),
+        body: JSON.stringify({ answers: answersObject, quizId: quizId }),
       });
 
       if (!response.ok) throw new Error('Failed to submit quiz');
