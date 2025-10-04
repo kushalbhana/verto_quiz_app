@@ -15,12 +15,12 @@ import { useState } from "react";
 export function NavbarHome() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Home",
+      link: "#",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Listing",
+      link: "#quiz",
     },
     {
       name: "Contact",
@@ -44,7 +44,6 @@ export function NavbarHome() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
             <NavbarButton onClick={scrollToBottom} className="bg-sidebar-foreground text-white">Start a Quiz</NavbarButton>
           </div>
         </NavBody>
@@ -92,6 +91,7 @@ export function NavbarHome() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
+
   );
 }
 

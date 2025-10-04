@@ -13,7 +13,7 @@ async function main() {
     data: {
       title: 'JavaScript Fundamentals',
       description: 'Test your knowledge of core JavaScript concepts',
-      duration: 300,
+      duration: 180,
       questions: {
         create: [
           {
@@ -62,7 +62,7 @@ async function main() {
     data: {
       title: 'React Basics',
       description: 'Assess your foundational knowledge of React.js',
-      duration: 300,
+      duration: 240,
       questions: {
         create: [
           {
@@ -154,7 +154,7 @@ async function main() {
     },
   });
 
-  console.log('Seed data created successfully ✅');
+  console.log('Seed data created successfully');
 }
 
 main()

@@ -16,7 +16,7 @@ export default function Home() {
         <HeroBackground/>
       </div>
       <section>
-        <div>
+        <div id="quiz">
           <QuizSection />
         </div>
       </section>
