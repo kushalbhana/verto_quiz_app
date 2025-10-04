@@ -2,7 +2,7 @@ import { HeroText } from "./Herotext";
 
 export function HeroBackground() {
   return (
-    <div className="relative flex h-screen w-screen justify-center items-center overflow-hidden -mt-14">
+    <div className="relative flex h-screen w-screen justify-center items-center overflow-hidden">
       {/* Outer Circle */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-screen h-[1900px] bg-blue-200/10 flex justify-center items-center">
         {/* Second Circle */}
