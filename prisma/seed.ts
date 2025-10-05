@@ -12,7 +12,7 @@ async function main() {
   const jsQuiz = await prisma.quiz.create({
     data: {
       title: 'JavaScript Fundamentals',
-      description: 'Test your knowledge of core JavaScript concepts',
+      description: 'Test your knowledge and understanding of core JavaScript concepts',
       duration: 180,
       questions: {
         create: [
@@ -61,7 +61,7 @@ async function main() {
   const reactQuiz = await prisma.quiz.create({
     data: {
       title: 'React Basics',
-      description: 'Assess your foundational knowledge of React.js',
+      description: 'Assess your foundational knowledge of React.js framework',
       duration: 240,
       questions: {
         create: [
