@@ -4,16 +4,13 @@ import { Footer } from "@/components/home/footer";
 import { HeroBackground } from "@/components/home/HeroBackground";
 import { HeroOverlay } from "@/components/home/HeroOverlay";
 import { HeroText } from "@/components/home/Herotext";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-
-
-
   return (
     <div>
-        <NavbarHome />
       <div className="container h-screen">
-        <div className="absolute z-20 w-full ">
+        <div className="absolute z-20 w-full h-[60%]">
           <HeroText/>
         </div>
         <HeroOverlay/>

@@ -49,12 +49,12 @@ DATABASE_URL="postgresql://user:password@localhost:5432/quiz_db?schema=public"
 
 4. Run Prisma migrations:
 ```bash
-npm run prisma:migrate
+npx prisma migrate dev
 ```
 
 5. Seed the database:
 ```bash
- npx tsx prisma db seed        
+ npx tsx prisma/seed.tsD     
 ```
 
 6. Start the development server:
