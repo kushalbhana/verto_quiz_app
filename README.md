@@ -1,71 +1,108 @@
 # Quiz Application
 
-A full-stack quiz application built with clean design principles where users can take a quiz and view their scores instantly. It features a backend with a structured database and scoring API, and a responsive frontend that offers smooth navigation through questions, real-time answer tracking, and a detailed results page. Bonus features include a timer and answer breakdown. Scalable and maintainable beacause followed all the desing principles.
+A full-stack quiz application built with clean design principles where users can take a quiz and view their scores instantly. It features a backend with a structured database and scoring API, and a responsive frontend that offers smooth navigation through questions, real-time answer tracking, and a detailed results page. Bonus features include a timer and answer breakdown. The app is designed to be scalable and maintainable by following SOLID and clean architecture principles. Server side rendered components caches the courses minimizing the database calls.
 
 ![Alt text](https://f7txk9tsyx.ufs.sh/f/8gUdVkfGZyYUWJa1s20dGT5gK6bewh7mcPFX2VHu0Z3ECLIz)
 
-## Features
+## ✨ Features
 
-- ✅ Multiple choice questions with navigation
-- ⏱️ Countdown timer
-- 📊 Real-time progress tracking
-- 📈 Detailed results with answer breakdown
-- 🎨 Beautiful, responsive UI with Tailwind CSS
-- 🏗️ Clean architecture following SOLID principles
-- 🧪 Unit tests for business logic
+* ✅ Multiple choice questions with navigation
+* ⏱️ Countdown timer
+* 📊 Real-time progress tracking
+* 📈 Detailed results with answer breakdown
+* 🎨 Beautiful, responsive UI with Tailwind CSS
+* 🏗️ Clean architecture following SOLID principles
+* 🧪 Unit tests for business logic
 
-## Tech Stack
+## 🧰 Tech Stack
 
-- **Frontend**: Next.js 14 (App Router), TypeScript
-- **Backend**: Next.js API Routes
-- **Database**: PostgreSQL with Prisma ORM
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
+* **Frontend**: Next.js 14 (App Router), TypeScript
+* **Backend**: Next.js API Routes
+* **Database**: PostgreSQL with Prisma ORM
+* **Styling**: Tailwind CSS
+* **Icons**: Lucide React
 
-## Getting Started
+---
 
-### Prerequisites
+## 🚀 Getting Started
 
-- Node.js 18+ 
-- PostgreSQL database
+### 1. Prerequisites
 
-### Installation
+* **Node.js 18+**
+* **PostgreSQL** 
 
-1. Clone the repository:
+---
+
+### 2. Clone the Repository
+
 ```bash
 git clone <repository-url>
 cd quiz-app
 ```
 
-2. Install dependencies:
+---
+
+### 3. Install Dependencies
+
 ```bash
 npm install
 ```
 
-3. Set up environment variables:
-Create a `.env` file in the root directory:
-```
-DATABASE_URL="postgresql://user:password@localhost:5432/quiz_db?schema=public"
+---
+
+### 4. Set Up Environment Variables
+
+Create a `.env` file in the root directory with the following content:
+
+```env
+DATABASE_URL="postgresql://admin:admin_quiz_app@localhost:5432/verto_quiz_app" // Replace with your URL if not using docker
+DATABASE_USER_NAME="admin"
+DATABASE_USER_PASSWORD="admin_quiz_app"
+DATABASE_NAME="verto_quiz_app"
+NODE_ENV="development"
 ```
 
-4. Run Prisma migrations:
+---
+
+### 🐳 **(Optional) Run PostgreSQL with Docker Compose**
+
+If want to run postgres using `docker`, simply run:
+
+```bash
+docker-compose up -d
+```
+
+This will start a local PostgreSQL instance using the credentials defined in your `.env` file.
+
+---
+
+### 5. Run Prisma Migrations
+
 ```bash
 npx prisma migrate dev
 ```
 
-5. Seed the database:
+---
+
+### 6. Seed the Database
+
 ```bash
- npx tsx prisma/seed.tsD     
+npx tsx prisma/seed.ts
 ```
 
-6. Start the development server:
+---
+
+### 7. Start the Development Server
+
 ```bash
 npm run dev
 ```
 
-7. Open [http://localhost:3000](http://localhost:3000)
+Visit [http://localhost:3000](http://localhost:3000) 🎉
 
-## Project Structure
+---
+
+## 🧭 Project Structure
 
 ```
 quiz-app/
@@ -80,38 +117,50 @@ quiz-app/
 └── package.json
 ```
 
-## Architecture
+---
 
-The application follows clean architecture principles:
+## 🏗️ Architecture
 
-- **Repository Pattern**: Database access layer (`IQuizRepository`, `QuizRepository`)
-- **Service Layer**: Business logic (`IQuizService`, `QuizService`)
-- **Dependency Injection**: Services depend on abstractions, not implementations
-- **Separation of Concerns**: Clear boundaries between layers
+The application follows **clean architecture principles**:
 
-## Running Tests
+* **Repository Pattern** → Database access layer (`IQuizRepository`, `QuizRepository`)
+* **Service Layer** → Business logic (`IQuizService`, `QuizService`)
+* **Dependency Injection** → Services depend on abstractions, not implementations
+* **Separation of Concerns** → Clear boundaries between layers
+
+---
+
+## 🧪 Running Tests
 
 ```bash
 npm test
 ```
 
-## API Endpoints
+---
 
-- `GET /api/quiz/:id` - Fetch quiz questions (without answers)
-- `POST /api/quiz/:id/submit` - Submit quiz answers and get results
+## 🌐 API Endpoints
 
-## Deployment
+* `GET /api/quiz/:id` → Fetch quiz questions (without correct answers)
+* `POST /api/quiz/:id/submit` → Submit quiz answers and receive results
+
+---
+
+## 📦 Deployment
 
 1. Build the application:
+
 ```bash
 npm run build
 ```
 
 2. Start the production server:
+
 ```bash
 npm start
 ```
 
-## License
+---
+
+## 📄 License
 
 MIT
