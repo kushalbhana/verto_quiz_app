@@ -1,6 +1,8 @@
 # Quiz Application
 
-A production-grade full-stack quiz application built with Next.js, TypeScript, Prisma, and PostgreSQL.
+A full-stack quiz application built with clean design principles where users can take a quiz and view their scores instantly. It features a backend with a structured database and scoring API, and a responsive frontend that offers smooth navigation through questions, real-time answer tracking, and a detailed results page. Bonus features include a timer and answer breakdown. Scalable and maintainable beacause followed all the desing principles.
+
+![Alt text](https://f7txk9tsyx.ufs.sh/f/8gUdVkfGZyYUWJa1s20dGT5gK6bewh7mcPFX2VHu0Z3ECLIz)
 
 ## Features
 
@@ -14,11 +16,10 @@ A production-grade full-stack quiz application built with Next.js, TypeScript, P
 
 ## Tech Stack
 
-- **Frontend**: Next.js 14 (App Router), React, TypeScript
+- **Frontend**: Next.js 14 (App Router), TypeScript
 - **Backend**: Next.js API Routes
 - **Database**: PostgreSQL with Prisma ORM
 - **Styling**: Tailwind CSS
-- **Testing**: Jest
 - **Icons**: Lucide React
 
 ## Getting Started
