@@ -36,8 +36,8 @@ A full-stack quiz application built with clean design principles where users can
 ### 2. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd quiz-app
+git clone https://github.com/kushalbhana/verto_quiz_app.git
+cd verto_quiz_app
 ```
 
 ---
