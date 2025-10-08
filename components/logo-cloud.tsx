@@ -9,7 +9,7 @@ export default function LogoCloud() {
                     <div className="md:max-w-44 md:border-r md:pr-6">
                         <p className="text-end text-sm">Powering the best teams</p>
                     </div>
-                    <div className="relative py-6 md:w-[calc(100%-11rem)]">
+                    <div className="relative py-6 md:w-[calc(100%-11rem)] overflow-hidden">
                         <InfiniteSlider
                             speedOnHover={20}
                             speed={40}

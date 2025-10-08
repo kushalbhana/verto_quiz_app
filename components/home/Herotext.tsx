@@ -64,7 +64,7 @@ export function HeroText(){
                 <FeatureSection/>
             </div>
             
-            <div>
+            <div className="w-full">
                 <LogoCloud />
             </div>
 

@@ -1,6 +1,6 @@
 export function Footer(){
     return(
-        <div className="flex justify-between items-center px-8 text-white h-12 bg-sidebar-foreground w-full mt-14">
+        <div className="flex flex-wrap gap-2 sm:justify-between justify-center items-center px-8 text-white sm:h-12 h-20 bg-sidebar-foreground w-full mt-14">
             <div>
                 Copyright 2025 | All Rights Reserved
             </div>
