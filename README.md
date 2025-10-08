@@ -1,6 +1,8 @@
 # Quiz Application
 
-A full-stack quiz application built with clean design principles where users can take a quiz and view their scores instantly. It features a backend with a structured database and scoring API, and a responsive frontend that offers smooth navigation through questions, real-time answer tracking, and a detailed results page. Bonus features include a timer and answer breakdown. The app is designed to be scalable and maintainable by following SOLID and clean architecture principles. Server side rendered components caches the courses minimizing the database calls.
+A full-stack quiz application built with clean design principles where users can take a quiz and view their scores instantly. It features a backend with a structured database and scoring API, and a responsive frontend that offers smooth navigation through questions, real-time answer tracking, and a detailed results page. Bonus features include a timer and answer breakdown. The app is designed to be scalable and maintainable by following SOLID and clean architecture principles. Server side rendered components caches the courses minimizing the database calls and improves the load time.
+
+👉 **Live Demo:** [https://quiz.kushalbhana.dev](https://quiz.kushalbhana.dev)
 
 ![Alt text](https://f7txk9tsyx.ufs.sh/f/8gUdVkfGZyYUWJa1s20dGT5gK6bewh7mcPFX2VHu0Z3ECLIz)
 
@@ -12,7 +14,6 @@ A full-stack quiz application built with clean design principles where users can
 * 📈 Detailed results with answer breakdown
 * 🎨 Beautiful, responsive UI with Tailwind CSS
 * 🏗️ Clean architecture following SOLID principles
-* 🧪 Unit tests for business logic
 
 ## 🧰 Tech Stack
 
@@ -106,14 +107,12 @@ Visit [http://localhost:3000](http://localhost:3000) 🎉
 
 ```
 quiz-app/
-├── prisma/              # Database schema and migrations
-├── src/
-│   ├── app/            # Next.js app router pages and API routes
-│   ├── components/     # React components
-│   ├── context/        # React context for state management
-│   ├── lib/            # Business logic, services, and repositories
-│   └── types/          # TypeScript type definitions
-├── __tests__/          # Unit tests
+├── prisma/             # Database schema and migrations
+├── app/                # Next.js app router pages and API routes
+├── components/         # React components
+├── context/            # React context for state management
+├── lib/                # Business logic, services, and repositories
+└── types/              # TypeScript type definitions
 └── package.json
 ```
 
@@ -121,20 +120,12 @@ quiz-app/
 
 ## 🏗️ Architecture
 
-The application follows **clean architecture principles**:
+Application folllows **solid design principles** and design patterns to make it maintainable, scalable and minimizes the bugs.
 
 * **Repository Pattern** → Database access layer (`IQuizRepository`, `QuizRepository`)
 * **Service Layer** → Business logic (`IQuizService`, `QuizService`)
 * **Dependency Injection** → Services depend on abstractions, not implementations
 * **Separation of Concerns** → Clear boundaries between layers
-
----
-
-## 🧪 Running Tests
-
-```bash
-npm test
-```
 
 ---
 
